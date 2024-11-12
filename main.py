@@ -31,10 +31,10 @@ class DeckOfCards:
     def shuffle_deck(self):
         random.shuffle(self.__cards)
 
-    def deal_card(self):
+    def deal_card(self): # instead of if block, try - catch exception were better to use here
         try:
            return self.__cards.pop()
-        except IndexError:
+        except IndexError: 
             return None
         
     def get_deck_info(self):
